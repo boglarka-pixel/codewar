@@ -51,3 +51,25 @@ def digital_root(n):
     while n > 9:
         n = sum(map(int, str(n)))
     return n
+
+
+###############################################
+
+
+pin = input()
+def pinFun():
+    result = ''
+    for p in pin:
+        if p.isnumeric() != True:
+            result = 'Please enter a number'
+        elif p.isnumeric() == False:
+            result = 'Pin s created'
+    return result
+ 
+print(pinFun())
+
+
+
+
+            
+			

@@ -14,6 +14,32 @@ def xo(s):
      return len(xx) == len(oo)
   
 
-print(xo('zzoo'))
+# print(xo('zzoo'))
+
+
+def solution(string, ending):
+    if len(ending) == 0:
+        return True
+    
+    end_count = len(ending)
+    print(end_count)
+    
+    if string[-end_count:] == ending:
+        return True
+    else:
+        return False
+   
+
+
+
+
+print(solution('abcde', 'cde')) #ture
+print(solution('abcde', 'abc')) # false
+print(solution('abcde', '')) #true
+print(solution('samurai', 'ai')) # true
+
+# string = 'valamike'
+
+# print(string[-1:])
 
 
